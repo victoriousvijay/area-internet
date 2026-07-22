@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Area Internet Providers",
+  "description": "Ultra-fast fiber internet and high-speed broadband solutions with 99.9% uptime and 24/7 support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
