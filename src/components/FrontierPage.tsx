@@ -200,8 +200,8 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
 
   const faqs = [
     {
-      question: 'What makes Frontier Fiber different from traditional cable internet?',
-      answer: 'Frontier Fiber utilizes 100% fiber-optic lines directly to your home. Unlike cable internet, which relies on shared copper wires that slow down during peak hours, Frontier Fiber delivers symmetrical upload and download speeds, ultra-low latency, and unmatched 99.9% uptime reliability.'
+      question: 'What makes Fiber Internet different from traditional cable internet?',
+      answer: 'Fiber Internet utilizes 100% fiber-optic lines directly to your home. Unlike cable internet, which relies on shared copper wires that slow down during peak hours, Fiber Internet delivers symmetrical upload and download speeds, ultra-low latency, and unmatched 99.9% uptime reliability.'
     },
     {
       question: 'What are symmetrical speeds and why do they matter?',
@@ -209,19 +209,19 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
     },
     {
       question: 'Are there any monthly data caps or annual contracts?',
-      answer: 'No! All Frontier Fiber internet plans feature 100% unlimited data with zero monthly caps, zero speed throttling, and zero overage charges. Plus, there are no annual service contracts required, giving you total flexibility.'
+      answer: 'No! All Fiber Internet plans feature 100% unlimited data with zero monthly caps, zero speed throttling, and zero overage charges. Plus, there are no annual service contracts required, giving you total flexibility.'
     },
     {
-      question: 'Is Wi-Fi router equipment included with my Frontier Fiber plan?',
-      answer: 'Yes! Every Frontier Fiber plan includes a cutting-edge Wi-Fi 6 or Wi-Fi 6E system at no extra monthly rental charge, ensuring full-home wireless coverage with multi-device bandwidth optimization.'
+      question: 'Is Wi-Fi router equipment included with my Fiber Internet plan?',
+      answer: 'Yes! Every Fiber Internet plan includes a cutting-edge Wi-Fi 6 or Wi-Fi 6E system at no extra monthly rental charge, ensuring full-home wireless coverage with multi-device bandwidth optimization.'
     },
     {
-      question: 'How do I order Frontier Fiber for my home?',
+      question: 'How do I order Fiber Internet for my home?',
       answer: 'Ordering is fast and easy! Simply call our dedicated phone specialists at +1-866-654-4005. Our representatives will check local fiber availability, guide you through available speed packages, and schedule your expert installation appointment.'
     },
     {
       question: 'How long does professional fiber installation take?',
-      answer: 'Most standard Frontier Fiber installations are completed in under 2 hours by a certified technician who will bring the fiber line to your home, set up your Wi-Fi router, and ensure all your devices are connected.'
+      answer: 'Most standard Fiber Internet installations are completed in under 2 hours by a certified technician who will bring the fiber line to your home, set up your Wi-Fi router, and ensure all your devices are connected.'
     }
   ];
 
@@ -237,7 +237,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
           <Zap className="w-3 h-3 text-yellow-300 animate-pulse" />
           <span>Special Offer</span>
         </span>
-        <span className="hidden md:inline">Frontier Fiber Internet - 100% Symmetrical Fiber Optics Up To 5 Gig!</span>
+        <span className="hidden md:inline">Fiber Internet - 100% Symmetrical Fiber Optics Up To 5 Gig!</span>
         <a
           href="tel:18666544005"
           className="inline-flex items-center gap-1.5 underline decoration-2 underline-offset-4 hover:text-yellow-200 transition-colors font-mono whitespace-nowrap text-[11px] sm:text-xs shrink-0"
@@ -270,7 +270,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="font-heading font-extrabold text-sm sm:text-lg tracking-tight text-slate-900 flex items-center gap-1 leading-none whitespace-nowrap">
-                  FRONTIER <span className="text-[#FF0037]">FIBER</span>
+                  FIBER <span className="text-[#FF0037]">INTERNET</span>
                 </span>
                 <span className="hidden sm:block text-[9px] font-mono tracking-widest text-slate-500 uppercase">
                   AUTHORIZED ADVISOR
@@ -283,7 +283,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
           <nav className="hidden md:flex items-center gap-6 text-xs font-bold text-slate-700">
             <a href="#plans" className="hover:text-[#FF0037] transition-colors">Fiber Plans</a>
             <a href="#comparison" className="hover:text-[#FF0037] transition-colors">Fiber vs Cable</a>
-            <a href="#features" className="hover:text-[#FF0037] transition-colors">Why Frontier</a>
+            <a href="#features" className="hover:text-[#FF0037] transition-colors">Why Fiber</a>
             <a href="#faq" className="hover:text-[#FF0037] transition-colors">FAQ</a>
           </nav>
 
@@ -325,7 +325,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
               <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
                 Next-Gen <br />
                 <span className="bg-gradient-to-r from-[#FF0037] via-[#D90429] to-[#990022] bg-clip-text text-transparent">
-                  Frontier Fiber Internet
+                  Fiber Internet
                 </span>
               </h1>
 
@@ -393,7 +393,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
                     <div className="flex items-center gap-2">
                       <div className="w-3 h-3 rounded-full bg-[#FF0037] animate-ping" />
                       <div>
-                        <h3 className="text-xs font-bold text-slate-900 font-mono">FRONTIER_FIBER_NODE</h3>
+                        <h3 className="text-xs font-bold text-slate-900 font-mono">FIBER_INTERNET_NODE</h3>
                         <p className="text-[10px] text-slate-500">100% Fiber Optic Dedicated Line</p>
                       </div>
                     </div>
@@ -513,7 +513,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
               Transparent Monthly Pricing
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-              Frontier Fiber Speed Plans
+              Fiber Internet Speed Plans
             </h2>
             <p className="text-slate-600 text-sm sm:text-base">
               Choose the perfect symmetrical fiber speed tier for your family or home office. No contracts, no data caps, and free Wi-Fi equipment included.
@@ -614,7 +614,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
               Technology Comparison
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Frontier Fiber vs. Traditional Cable Internet
+              Fiber Internet vs. Traditional Cable Internet
             </h2>
             <p className="text-slate-600 text-sm max-w-2xl mx-auto">
               See why switching to 100% fiber-optic internet delivers superior performance for streaming, remote work, video conferencing, and online gaming.
@@ -631,7 +631,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
                 <tr className="border-b border-slate-200 bg-slate-100">
                   <th className="p-4 sm:p-5 font-bold text-slate-800">Feature Comparison</th>
                   <th className="p-4 sm:p-5 font-bold text-[#FF0037] bg-red-50 border-x border-red-200 text-center">
-                    Frontier Fiber
+                    Fiber Internet
                   </th>
                   <th className="p-4 sm:p-5 font-bold text-slate-600 text-center">
                     Traditional Cable
@@ -691,7 +691,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
               Engineered for Modern Connectivity
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Why Choose Frontier Fiber Internet
+              Why Choose Fiber Internet
             </h2>
             <p className="text-slate-600 text-sm sm:text-base">
               Built on 100% fiber-optic infrastructure designed for zero bottlenecks, instant responsiveness, and full-home Wi-Fi coverage.
@@ -718,7 +718,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
               {
                 icon: ShieldCheck,
                 title: 'Zero Data Caps & Limits',
-                desc: 'Stream, download, and game as much as you want. Frontier Fiber never imposes data caps, bandwidth penalties, or hidden overage fees.'
+                desc: 'Stream, download, and game as much as you want. Fiber Internet never imposes data caps, bandwidth penalties, or hidden overage fees.'
               },
               {
                 icon: Clock,
@@ -770,7 +770,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
           
           <div className="text-center space-y-3">
             <h2 className="font-heading text-3xl font-extrabold text-slate-900">
-              How to Get Frontier Fiber in 3 Simple Steps
+              How to Get Fiber Internet in 3 Simple Steps
             </h2>
             <p className="text-slate-600 text-sm max-w-xl mx-auto">
               Our phone ordering process is straightforward, fast, and completely hassle-free.
@@ -828,10 +828,10 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
               Frequently Asked Questions
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Frontier Fiber FAQ
+              Fiber Internet FAQ
             </h2>
             <p className="text-slate-600 text-sm">
-              Got questions about Frontier Fiber internet? Find quick answers below or speak to our telephone specialists.
+              Got questions about Fiber Internet? Find quick answers below or speak to our telephone specialists.
             </p>
           </div>
 
@@ -884,7 +884,7 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
           
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
-            Ready to Upgrade Your Home to Frontier Fiber?
+            Ready to Upgrade Your Home to Fiber Internet?
           </h2>
 
           <p className="text-slate-100 text-sm sm:text-base max-w-2xl mx-auto font-medium">
@@ -917,11 +917,11 @@ export const FrontierPage: React.FC<FrontierPageProps> = ({
               <div className="flex items-center gap-2">
                 <Wifi className="w-5 h-5 text-[#FF0037]" />
                 <span className="font-heading font-extrabold text-white text-base">
-                  FRONTIER <span className="text-[#FF0037]">FIBER</span>
+                  FIBER <span className="text-[#FF0037]">INTERNET</span>
                 </span>
               </div>
               <p className="text-slate-400 text-xs leading-relaxed">
-                Providing expert guidance and phone ordering for Frontier Fiber high-speed broadband, symmetrical multi-gig fiber, and home connectivity solutions.
+                Providing expert guidance and phone ordering for Fiber Internet high-speed broadband, symmetrical multi-gig fiber, and home connectivity solutions.
               </p>
             </div>
 
