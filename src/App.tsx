@@ -19,11 +19,12 @@ import { BookingModal } from './components/BookingModal';
 import { PrivacyPage } from './components/PrivacyPage';
 import { TermsPage } from './components/TermsPage';
 import { FrontierPage } from './components/FrontierPage';
+import { SpectrumBusinessPage } from './components/SpectrumBusinessPage';
 import { Plan } from './types';
 
 export default function App() {
   const [preloaderFinished, setPreloaderFinished] = useState(false);
-  const [currentPage, setCurrentPage] = useState<'home' | 'frontier' | 'privacy' | 'terms'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'frontier' | 'spectrum' | 'privacy' | 'terms'>('home');
   const [availabilityModalOpen, setAvailabilityModalOpen] = useState(false);
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<Plan | null>(null);
@@ -37,6 +38,8 @@ export default function App() {
 
       if (path === '/fiber-internet' || path === '/fiber-internet/' || hash === '#fiber-internet' || hash === '#frontier') {
         setCurrentPage('frontier');
+      } else if (path === '/spectrum-business' || path === '/spectrum-business/' || hash === '#spectrum-business') {
+        setCurrentPage('spectrum');
       } else if (hash === '#privacy' || path === '/privacy') {
         setCurrentPage('privacy');
       } else if (hash === '#terms' || path === '/terms') {
@@ -142,6 +145,22 @@ export default function App() {
     window.scrollTo(0, 0);
   };
 
+  const navigateToSpectrum = () => {
+    setCurrentPage('spectrum');
+    history.pushState(null, '', '/spectrum-business');
+    window.scrollTo(0, 0);
+  };
+
+  if (currentPage === 'spectrum') {
+    return (
+      <SpectrumBusinessPage
+        onBackToHome={navigateToHome}
+        onNavigateToPrivacy={navigateToPrivacy}
+        onNavigateToTerms={navigateToTerms}
+      />
+    );
+  }
+
   if (currentPage === 'frontier') {
     return (
       <FrontierPage
@@ -187,6 +206,7 @@ export default function App() {
           onCheckAvailabilityClick={() => handleOpenAvailability()}
           onSelectPlanClick={() => handleViewPlansClick()}
           onNavigateToFrontier={navigateToFrontier}
+          onNavigateToSpectrum={navigateToSpectrum}
         />
 
         {/* Main Landing Sections */}
@@ -231,6 +251,7 @@ export default function App() {
           onOpenPrivacy={navigateToPrivacy}
           onOpenTerms={navigateToTerms}
           onOpenFrontier={navigateToFrontier}
+          onOpenSpectrum={navigateToSpectrum}
         />
 
       </div>

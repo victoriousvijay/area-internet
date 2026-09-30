@@ -6,6 +6,7 @@ interface FooterProps {
   onOpenPrivacy?: () => void;
   onOpenTerms?: () => void;
   onOpenFrontier?: () => void;
+  onOpenSpectrum?: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({
@@ -13,6 +14,7 @@ export const Footer: React.FC<FooterProps> = ({
   onOpenPrivacy,
   onOpenTerms,
   onOpenFrontier,
+  onOpenSpectrum,
 }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -115,6 +117,20 @@ export const Footer: React.FC<FooterProps> = ({
                 >
                   <span>Fiber Internet</span>
                 </button>
+              </li>
+              <li>
+                <a
+                  href="/spectrum-business"
+                  onClick={(e) => {
+                    if (onOpenSpectrum) {
+                      e.preventDefault();
+                      onOpenSpectrum();
+                    }
+                  }}
+                  className="text-sky-400 font-bold hover:underline transition-colors"
+                >
+                  Spectrum Business
+                </a>
               </li>
               <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
               <li><a href="#features" className="hover:text-white transition-colors">Network Features</a></li>
