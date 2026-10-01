@@ -30,8 +30,8 @@ interface SpectrumBusinessPageProps {
   onNavigateToTerms?: () => void;
 }
 
-const PHONE_DISPLAY = '+1-866-654-4005';
-const PHONE_TEL = 'tel:18666544005';
+const PHONE_DISPLAY = '1-866-984-3065';
+const PHONE_TEL = 'tel:18669843065';
 const PAGE_URL = 'https://areainternetproviders.com/spectrum-business';
 const LOGO_SRC = '/spectrum-authorized-channel-partner.jpg';
 
