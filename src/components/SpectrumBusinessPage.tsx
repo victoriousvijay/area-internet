@@ -321,7 +321,7 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
   };
 
-  const CallButton: React.FC<{ className?: string; label?: string }> = ({ className = '', label = `Call Now: ${PHONE_DISPLAY}` }) => (
+  const CallButton: React.FC<{ className?: string; label?: React.ReactNode }> =({ className = '', label = `Call Now: ${PHONE_DISPLAY}` }) => (
     <a
       href={PHONE_TEL}
       className={`inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#0099D8] to-[#0B5FD6] hover:from-[#0B5FD6] hover:to-[#083E94] text-white font-extrabold shadow-md hover:shadow-lg transition-all interactive ${className}`}
@@ -344,7 +344,7 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
           className="inline-flex items-center gap-1.5 underline decoration-2 underline-offset-4 hover:text-sky-300 transition-colors font-mono whitespace-nowrap"
         >
           <Phone className="w-3.5 h-3.5 fill-current" />
-          <span>{PHONE_DISPLAY}</span>
+          <span>Call Now: {PHONE_DISPLAY}</span>
         </a>
       </div>
 
@@ -379,7 +379,12 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
 
           <CallButton
             className="px-3 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm whitespace-nowrap shrink-0"
-            label="Call Now"
+            label={
+              <>
+                <span className="hidden sm:inline">Call Now: {PHONE_DISPLAY}</span>
+                <span className="sm:hidden">Call Now</span>
+              </>
+            }
           />
         </div>
       </header>
@@ -436,7 +441,7 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
                   className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-[#0099D8] to-[#0B5FD6] hover:to-[#083E94] text-white text-base font-extrabold transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] flex items-center justify-center gap-3 group interactive"
                 >
                   <Phone className="w-5 h-5 fill-current animate-pulse" />
-                  <span>Call {PHONE_DISPLAY}</span>
+                  <span>Call Now: {PHONE_DISPLAY}</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a
@@ -474,7 +479,7 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
                     </p>
                     <p className="text-xs text-emerald-700 font-bold">Up to 500 Mbps • No contract • No data caps</p>
                   </div>
-                  <CallButton className="w-full py-3.5 text-sm" label="Check Availability by Phone" />
+                  <CallButton className="w-full py-3.5 text-sm" />
                 </div>
               </div>
             </motion.div>
@@ -589,7 +594,7 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
                 className="px-6 py-3 rounded-xl bg-white text-[#0B2340] text-sm font-extrabold flex items-center gap-2 shrink-0 hover:bg-sky-50 transition-colors"
               >
                 <Phone className="w-4 h-4 fill-current" />
-                <span>Add It Today</span>
+                <span>Call Now: {PHONE_DISPLAY}</span>
               </a>
             </div>
           </div>
@@ -896,7 +901,7 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
               className="inline-flex px-8 py-4 rounded-2xl bg-white text-[#0B2340] text-base font-extrabold hover:bg-sky-50 transition-all shadow-xl hover:scale-[1.03] items-center justify-center gap-3 font-mono interactive"
             >
               <Phone className="w-5 h-5 fill-current animate-pulse" />
-              <span>Call {PHONE_DISPLAY}</span>
+              <span>Call Now: {PHONE_DISPLAY}</span>
             </a>
           </div>
         </section>
@@ -959,7 +964,7 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
 
       {/* Mobile sticky call bar */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 p-2.5 bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-2xl">
-        <CallButton className="w-full py-3 text-xs whitespace-nowrap" label={`Call Spectrum Business: ${PHONE_DISPLAY}`} />
+        <CallButton className="w-full py-3 text-xs whitespace-nowrap" label={`Call Now: ${PHONE_DISPLAY}`} />
       </div>
     </div>
   );
