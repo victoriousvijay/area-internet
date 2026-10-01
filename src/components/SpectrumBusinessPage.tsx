@@ -30,8 +30,8 @@ interface SpectrumBusinessPageProps {
   onNavigateToTerms?: () => void;
 }
 
-const PHONE_DISPLAY = '1-866-984-3065';
-const PHONE_TEL = 'tel:18669843065';
+const PHONE_DISPLAY = '+1-866-654-4005';
+const PHONE_TEL = 'tel:18666544005';
 const PAGE_URL = 'https://areainternetproviders.com/spectrum-business';
 const LOGO_SRC = '/spectrum-authorized-channel-partner.jpg';
 
@@ -397,8 +397,8 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
           variants={sectionVariants}
           className="relative pt-10 pb-16 md:pt-16 md:pb-20 overflow-hidden bg-gradient-to-b from-sky-50 via-white to-slate-50 border-b border-slate-200"
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="space-y-6 text-center">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-100 border border-sky-200 text-[#0B5FD6] text-xs font-mono font-bold tracking-wider uppercase">
                 <Building2 className="w-3.5 h-3.5" />
                 <span>Spectrum Business® Authorized Channel Partner</span>
@@ -412,12 +412,12 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
                 for Your Business
               </h1>
 
-              <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
                 Get fast, reliable Spectrum Business Internet with speeds up to 1 Gig, unlimited bandwidth and no contracts.
                 Add four Business Mobile lines and get Business Internet Advantage free forever.
               </p>
 
-              <ul className="grid sm:grid-cols-2 gap-3 pt-2 text-left max-w-xl mx-auto lg:mx-0">
+              <ul className="grid sm:grid-cols-2 gap-3 pt-2 text-left max-w-xl mx-auto">
                 {[
                   'Plans from $65/mo, no contract',
                   'Unlimited bandwidth, no data caps',
@@ -435,7 +435,7 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
                 ))}
               </ul>
 
-              <div className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
                   href={PHONE_TEL}
                   className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-[#0099D8] to-[#0B5FD6] hover:to-[#083E94] text-white text-base font-extrabold transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] flex items-center justify-center gap-3 group interactive"
@@ -457,32 +457,6 @@ export const SpectrumBusinessPage: React.FC<SpectrumBusinessPageProps> = ({
               </p>
             </div>
 
-            {/* Logo + price card */}
-            <motion.div
-              whileHover={{ y: -6 }}
-              transition={{ duration: 0.3 }}
-              className="lg:col-span-5 flex items-center justify-center interactive"
-            >
-              <div className="w-full max-w-md rounded-3xl p-1 bg-gradient-to-br from-[#0099D8]/50 via-sky-100 to-slate-200 shadow-xl">
-                <div className="rounded-[22px] bg-white border border-slate-200 p-6 sm:p-8 space-y-6">
-                  <img
-                    src={LOGO_SRC}
-                    alt="Spectrum Business Authorized Channel Partner"
-                    width={1200}
-                    height={404}
-                    className="w-full h-auto"
-                  />
-                  <div className="rounded-2xl bg-slate-50 border border-slate-200 p-5 text-center space-y-1">
-                    <p className="text-xs font-mono uppercase tracking-wider text-slate-500">Business Internet starting at</p>
-                    <p className="font-heading text-5xl font-extrabold text-[#0B2340]">
-                      $65<span className="text-base font-medium text-slate-500">/mo</span>
-                    </p>
-                    <p className="text-xs text-emerald-700 font-bold">Up to 500 Mbps • No contract • No data caps</p>
-                  </div>
-                  <CallButton className="w-full py-3.5 text-sm" />
-                </div>
-              </div>
-            </motion.div>
           </div>
         </motion.section>
 
